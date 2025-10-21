@@ -765,7 +765,6 @@ export default function TimeInLieuSection({ selectedDate, onRefresh }: TimeInLie
               )}
             </Button>
 
-            // Test Comment
             <div className="flex items-center ml-4">
               {submissionStatus.submitted && submissionStatus.status === "pending" ? (
                 <Button
@@ -1039,7 +1038,7 @@ export default function TimeInLieuSection({ selectedDate, onRefresh }: TimeInLie
               </ul>
             </div>
             <div className="flex justify-end">
-              <Button onClick={() => setIsRulesModalOpen(false)} className="bg-gray-200 hover:bg-gray-300 text-black">
+              <Button onClick={() => setIsRulesModalOpen(false)} className="bg-gray-200 hover:bg-gray-300 text-white">
                 Close
               </Button>
             </div>
@@ -1059,7 +1058,7 @@ export default function TimeInLieuSection({ selectedDate, onRefresh }: TimeInLie
             <div className="mb-4">
               <label className="block text-sm font-medium mb-1 text-gray-700">Comments (optional)</label>
               <textarea
-                className="w-full border border-gray-300 rounded p-2 text-black"
+                className="w-full border border-gray-300 rounded p-2 text-white"
                 rows={3}
                 placeholder="Add any comments for your manager..."
                 value={comments}
@@ -1067,7 +1066,7 @@ export default function TimeInLieuSection({ selectedDate, onRefresh }: TimeInLie
               ></textarea>
             </div>
             <div className="flex justify-end space-x-2">
-              <Button variant="outline" onClick={() => setIsSubmitDialogOpen(false)} className="text-gray-700">
+              <Button variant="outline" onClick={() => setIsSubmitDialogOpen(false)} className="text-white">
                 Cancel
               </Button>
               <Button

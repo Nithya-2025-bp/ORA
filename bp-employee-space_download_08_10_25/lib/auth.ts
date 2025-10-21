@@ -23,7 +23,6 @@ export async function authenticateUser(
       .ilike("email", email.trim()) // Add trim() to remove any whitespace
       .maybeSingle()
 
-    console.log("Password: ", password)
     // If user not found or error
     if (error) {
       console.error("Error fetching user:", error)
@@ -61,8 +60,6 @@ export async function authenticateUser(
 
     let password_matches = false;
     if (userData.password.startsWith("$2")) {
-
-      console.log("Hashing successfully completed");
       password_matches = await bcrypt.compare(password, userData.password);
     } else {
       console.log("------Need to Hash!-------")
