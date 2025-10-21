@@ -299,7 +299,7 @@ export default function TimesheetApprovalModal({
       <Dialog open={open} onOpenChange={onOpenChange}>
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden flex flex-col bg-white text-gray-900 border border-gray-200">
           <DialogHeader>
-            <DialogTitle className="text-gray-900">Pending Timesheet Approvals</DialogTitle>
+            <DialogTitle className="text-gray-900">Timesheets Overview</DialogTitle>
             <DialogDescription className="text-gray-700">
               Review and approve timesheets submitted by {userName}
             </DialogDescription>

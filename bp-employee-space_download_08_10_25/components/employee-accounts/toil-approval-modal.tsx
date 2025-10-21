@@ -564,7 +564,7 @@ export default function TOILApprovalModal({
           </div>
 
           <DialogFooter>
-            <Button variant="outline" onClick={() => onOpenChange(false)}>
+            <Button className="text-white" variant="outline" onClick={() => onOpenChange(false)}>
               Close
             </Button>
           </DialogFooter>
@@ -573,10 +573,10 @@ export default function TOILApprovalModal({
 
       {/* Reject Dialog */}
       <Dialog open={isRejectDialogOpen} onOpenChange={setIsRejectDialogOpen}>
-        <DialogContent className="bg-white text-gray-900 border border-gray-200">
+        <DialogContent className="bg-white text-white border border-gray-200">
           <DialogHeader>
             <DialogTitle className="text-gray-900">Reject TOIL Request</DialogTitle>
-            <DialogDescription className="text-gray-700">
+            <DialogDescription className="text-white">
               Please provide a reason for rejecting this TOIL request.
             </DialogDescription>
           </DialogHeader>
@@ -600,7 +600,7 @@ export default function TOILApprovalModal({
                 </div>
               </div>
 
-              <div className="space-y-2">
+              <div className="bg-grey">
                 <label htmlFor="comments" className="text-sm font-medium text-gray-900">
                   Rejection Reason
                 </label>
@@ -609,7 +609,7 @@ export default function TOILApprovalModal({
                   value={rejectionComments}
                   onChange={(e) => setRejectionComments(e.target.value)}
                   placeholder="Please provide feedback on why this TOIL request is being rejected"
-                  className="min-h-[100px] text-gray-900"
+                  className="min-h-[100px] bg-grey-200 text-white"
                 />
               </div>
             </div>

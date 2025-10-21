@@ -676,7 +676,7 @@ export default function TOILApprovals() {
           )}
 
           <DialogFooter>
-            <Button variant="outline" onClick={() => setIsApproveDialogOpen(false)} disabled={isProcessing}>
+            <Button className="text-white" variant="outline" onClick={() => setIsApproveDialogOpen(false)} disabled={isProcessing}>
               Cancel
             </Button>
             <Button onClick={handleApprove} disabled={isProcessing} className="bg-green-600 hover:bg-green-700">
@@ -701,7 +701,7 @@ export default function TOILApprovals() {
         <DialogContent className="bg-white border border-gray-200 max-w-3xl">
           <DialogHeader>
             <DialogTitle className="text-gray-900">Reject TOIL Request</DialogTitle>
-            <DialogDescription className="text-gray-700">
+            <DialogDescription className="text-white">
               Please provide a reason for rejecting this TOIL request
             </DialogDescription>
           </DialogHeader>
